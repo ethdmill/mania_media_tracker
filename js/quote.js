@@ -1,4 +1,5 @@
 var firstQuote = document.getElementById('firstQuote');
+var randomQuote;
 var quoteArray = [
   "Quote 1",
   "Quote 2",
@@ -13,6 +14,6 @@ var quoteArray = [
 ];
 
 function generateQuote () {
-  var randomQuote = quoteArray[Math.round(Math.random() * (quoteArray.length - 1))];
+  randomQuote = quoteArray[Math.round(Math.random() * (quoteArray.length - 1))];
   firstQuote.innerHTML = randomQuote;
 }
