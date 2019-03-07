@@ -8,10 +8,11 @@
 
   <body>
 
-    <header>
+    <header class="main-header">
 
       <!-- logo in top-left will redirect to home page (or home list page?) -->
-      <a href="#">Media Tracker Site</a> <!-- this will be an image!! remember to add logo filepath -->
+      <!-- this will be an image!! remember to add logo filepath later -->
+      <a href="#">Media Tracker Site</a>
 
       <div class="search">
         <!-- link to advanced search page -->
@@ -31,15 +32,16 @@
 
     <div class="content-container">
 
+      <!-- these are the HTML elements for creating a new list item -->
+      <div class="list-input-wrapper">
+        <input type="text" placeholder="Type your list title here">
+        <button type="button" name="create-list-button">Create New List</button>
+      </div>
+
       <!-- these are the big ol' list buttons -->
       <div class="list-wrapper">
-        <ul>
-          <li><a href="#">Books</a></li>
-          <li><a href="#">Movies</a></li>
-          <li><a href="#">Games</a></li>
-          <li><a href="#">Music</a></li>
-          <li><a href="#">Shows</a></li>
-          <li><a href="#">+</a></li>
+        <ul class="list-items">
+          <!-- this remains empty until user creates a list item -->
         </ul>
       </div>
 
