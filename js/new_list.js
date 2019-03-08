@@ -12,7 +12,7 @@ function createNewList () {
 
   //Conditional statement to prevent creation of lists with blank titles
   if (input.value == "") {
-    alert("You need to enter a list title.");
+    alert("Please enter a list title.");
   }
 
   //Alternate condition allows for list creation given any non-blank input string

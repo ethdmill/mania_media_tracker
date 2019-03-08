@@ -31,28 +31,31 @@
         <a href="#">Sign Up</a>
       </div>
 
+      <div class="quoteArea">
+        <p id="quote">Quote 0</p>
+        <button id="quoteButton" onclick="generateRandomQuote()">New Quote</button>
+      </div>
+
     </header>
 
     <div class="content-container">
-
-      <!-- these are the HTML elements for creating a new list item -->
       <div class="list-input-wrapper">
-        <input type="text" placeholder="Type your list title here">
-        <button type="button" name="create-list-button">Create New List</button>
+        <input type="text" id="title-input" placeholder="Type your list title here">
+        <button type="button" onclick="createNewList()">Create New List</button>
       </div>
-
-      <!-- these are the big ol' list buttons -->
       <div class="list-wrapper">
-        <ul class="list-items">
+        <ul id="list-items">
           <!-- this remains empty until user creates a list item -->
         </ul>
       </div>
-
-      <footer>
-        &copy; 2018 Ethan Miller
-      </footer>
-
     </div>
+
+    <footer>
+      &copy; 2018 Ethan Miller
+    </footer>
+
+    <script src="js/quote.js"></script>
+    <script src="js/new_list.js"></script>
 
   </body>
 

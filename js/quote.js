@@ -37,3 +37,5 @@ function generateRandomQuote () {
 //I am planning to add functionality in the future so that the
 //initial "Quote 0" is also selected from the array at random,
 //but for now, it is the same every time on page load
+
+//Will this function even be used for the main page?? Hmm.......
