@@ -1,9 +1,12 @@
-//These two variables select the firstQuote element <p> and then
-//create a something to store a later HTML change, respectively
-var firstQuote = document.getElementById('firstQuote');
+//This javascript displays a random quote on button click
+
+//Selects content of initial quote on page
+var quote = document.getElementById('quote');
+
+//This is used below to store random function output
 var randomQuote;
 
-//This is an array full of quotes for the later function to choose from
+//Array full of quotes for the later function to choose from
 var quoteArray = [
   "Quote 1",
   "Quote 2",
@@ -17,13 +20,20 @@ var quoteArray = [
   "Quote 10",
 ];
 
-//This function selects a random item from quoteArray and displays it by
-//changing the HTML content of the <p> element marked as "firstQuote"
-function generateQuote () {
+//Selects a random item from quoteArray and displays it
+function generateRandomQuote () {
+
+  //Randomly selects item from quoteArray
   randomQuote = quoteArray[Math.round(Math.random() * (quoteArray.length - 1))];
-  firstQuote.innerHTML = randomQuote;
+
+  //Sets HTML of displayed quote to random new quote
+  quote.innerHTML = randomQuote;
 }
 
-//I am planning to add functionality so that the initial "Quote 0"
-//is also selected from the array at random, but for now, it is
-//the same every time on page load
+// Things to do:
+//
+//- fill quoteArray with actual content
+
+//I am planning to add functionality in the future so that the
+//initial "Quote 0" is also selected from the array at random,
+//but for now, it is the same every time on page load
