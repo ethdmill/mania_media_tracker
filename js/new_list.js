@@ -40,3 +40,8 @@ function createNewList () {
 //
 //
 // Do I need to use event listeners, or do function tags in HTML count for project?
+//
+//
+// Future functionality:
+//
+//  - dropdown menu with default list title options (that will auto-connect to appropriate databases)
