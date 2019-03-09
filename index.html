@@ -1,68 +1,6 @@
 <!-- Main HTML for project site -->
-<!-- LAPTOP GIT PATH cd c/users/e/projects/programming/code_louisville/media_tracker -->
-
-<!-- Typical starting HTML -->
-<DOCTYPE! html> <!--  -->
-<html lang="en">
-  <head>
-    <title>Media Tracker Site</title>
-    <link rel="stylesheet" href="css/style.css">
-  <head>
-
-
-  <body>
-
-    <header class="main-header">
-
-      <!-- logo in top-left will redirect to home page (or home list page?) -->
-      <!-- this will be an image!! remember to add logo filepath later -->
-      <a href="#">Media Tracker Site</a>
-
-      <div class="search">
-        <!-- link to advanced search page -->
-        <a href="#">Advanced Search</a>
-        <!-- search bar --> <!-- size changeable in CSS - make sure to expand width of bar -->
-        <input type="text" placeholder="Here's searching for you, kid">
-      </div>
-
-      <!-- login/signup on top right of page, typical links -->
-      <div class="account">
-        <a href="#">Log In</a>
-        <div> | </div>
-        <a href="#">Sign Up</a>
-      </div>
-
-      <div class="quoteArea">
-        <p id="quote">Quote 0</p>
-        <button id="quoteButton" onclick="generateRandomQuote()">New Quote</button>
-      </div>
-
-    </header>
-
-    <div class="content-container">
-      <div class="list-input-wrapper">
-        <input type="text" id="title-input" placeholder="Type your list title here">
-        <button type="button" onclick="createNewList()">Create New List</button>
-      </div>
-      <div class="list-wrapper">
-        <ul id="list-items">
-          <!-- this remains empty until user creates a list item -->
-        </ul>
-      </div>
-    </div>
-
-    <footer>
-      &copy; 2018 Ethan Miller
-    </footer>
-
-    <script src="js/quote.js"></script>
-    <script src="js/new_list.js"></script>
-
-  </body>
-
-
-</html>
-
+<!-- LAPTOP GIT PATH  cd c/users/e/projects/programming/code_louisville/media_tracker -->
+<!-- DESKTOP GIT PATH cd /d/projects/programming/code_louisville/media_tracker -->
 
 <!--
 
@@ -78,4 +16,74 @@ Things to do:
 - rewrite code from scratch; copypaste this into notepad,
 use vertical monitor, get it allllll nice and clean
 
+Future functionality:
+
+- upon click, remove placeholder text from search bar and list title text input
+
  -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Media Tracker Site</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+
+
+  <body>
+
+
+    <header class="header-container">
+
+      <!-- Main header link will eventually be a clickable logo image that returns to homepage -->
+      <a href="#" class="site-logo">Media Tracker Site</a>
+
+      <!-- This div wraps the search bar, including the advanced search link and the search button -->
+      <div class="search-wrapper">
+
+        <!-- Advanced Search will eventually lead to separate advanced search page -->
+        <a href="#">Advanced Search</a>
+
+        <!-- Search bar and submit button -->
+        <input type="text" placeholder="Here's searching for you, kid" name="search">
+        <button type="submit">Search</button>
+      </div>
+
+      <!-- This div wraps the account login/signup links -->
+      <div>
+        <a href="#">Log In</a>
+        <span> | </span>
+        <a href="#">Sign Up</a>
+      </div>
+      <!-- Upon login, these will be replaced with link to personal account page -->
+
+
+
+
+
+
+
+
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+
+</html
