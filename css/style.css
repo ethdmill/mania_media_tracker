@@ -15,22 +15,34 @@ body {
     flex-wrap: wrap;
 }
 
-header {
+#header-container {
     background-color: gray;
     height: 250px;
     width: 100%;
     line-height:50px;
     text-align: center;
-    color: #4b4b4b;
     padding-top: 30px;
     padding-left: 30px;
     padding-right: 30px;
 }
 
-.site-logo {
+/* .site-logo {
   float: left;
+}
+
+.search-wrapper {
+  margin = auto;
 }
 
 .account-wrapper {
   float: right;
-}
+} */
+
+
+/* ----- Clearfix ----- */
+
+/* .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
