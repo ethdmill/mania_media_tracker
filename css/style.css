@@ -1,0 +1,36 @@
+/* #lists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 36px;
+    color: #fff;
+} */
+
+body {
+    font-family: Helvetica, Arial, "Helvetica Neue", sans-serif;
+    background-color: lightgray;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    background-color: gray;
+    height: 250px;
+    width: 100%;
+    line-height:50px;
+    text-align: center;
+    color: #4b4b4b;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.site-logo {
+  float: left;
+}
+
+.account-wrapper {
+  float: right;
+}

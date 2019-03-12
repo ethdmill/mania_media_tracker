@@ -9,6 +9,8 @@ Things to do:
 - make sure classes, ids, etc. are all good to go as css is built
 - create image for top-left logo
 - clean out these comments from top, replace with relevant project-turning-in comments
+- change mouse to pointer/text on hover over various page elements
+- add readme.md file to repo
 
 
 Future page functionality:
@@ -50,7 +52,7 @@ Future page functionality:
       </div>
 
       <!-- This div wraps the account login/signup links -->
-      <div>
+      <div class="account-wrapper">
         <a href="#">Log In</a>
         <span> | </span>
         <a href="#">Sign Up</a>
@@ -71,10 +73,10 @@ Future page functionality:
       </div>
 
       <!-- Wrapper for list title input area -->
-      <div class="title-input-wrapper">
+      <form class="title-input-wrapper" onsubmit="createNewList(event)">
         <input type="text" id="title-input" placeholder="Type list title here">
-        <button type="button" onclick="createNewList()">Create New List</button>
-      </div>
+        <button type="submit">Create New List</button>
+      </form>
 
       <!-- Wrapper for created lists -->
       <div class="list-wrapper">

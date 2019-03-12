@@ -8,7 +8,10 @@ var input = document.getElementById("title-input");
 var newItem;
 
 //Creates a new li element
-function createNewList () {
+function createNewList (event) {
+
+  // Prevents page from refreshing upon form submit
+  event.preventDefault();
 
   //Conditional statement to prevent creation of lists with blank titles
   if (input.value == "") {
@@ -20,7 +23,7 @@ function createNewList () {
     newItem = document.createElement("li");
 
     //Assigns an ID tag to the li upon its creation to apply CSS
-    newItem.setAttribute("id", "list-title");
+    newItem.classList.add("created-list");
 
     //Sets title of list to user's text input
     newItem.appendChild(document.createTextNode(input.value));
