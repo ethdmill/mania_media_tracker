@@ -1,7 +1,7 @@
 //This javascript manages the "Create New List" button
 
 //These select elements in the HTML for later use
-var ul = document.getElementById("list-items");
+var ul = document.getElementById("lists");
 var input = document.getElementById("title-input");
 
 //This is the basis for each new li element

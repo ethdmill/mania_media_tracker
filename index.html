@@ -6,21 +6,20 @@
 
 Things to do:
 
-- finish basic HTML structure (pull from small js-related snippets)
 - make sure classes, ids, etc. are all good to go as css is built
-- finish commenting out code
-- ensure that all large sections have containers/wrappers
 - create image for top-left logo
-- squish code back down
+- clean out these comments from top, replace with relevant project-turning-in comments
 
-- rewrite code from scratch; copypaste this into notepad,
-use vertical monitor, get it allllll nice and clean
 
-Future functionality:
+Future page functionality:
 
 - upon click, remove placeholder text from search bar and list title text input
+- ensure that lists remain on page after reload
+- search bar & advanced search
+- account system
+- all kinds of other fun goodies
 
- -->
+-->
 
 <!DOCTYPE html>
 <html>
@@ -58,32 +57,46 @@ Future functionality:
       </div>
       <!-- Upon login, these will be replaced with link to personal account page -->
 
-
-
-
-
-
-
-
     </header>
 
 
+    <!-- Container for all non-header content -->
+    <div class="content-container">
+
+      <!-- Wrapper for random quote generation-->
+      <div class="quote-wrapper">
+        <p id="quote">Quote 0</p>
+        <button id="quoteButton" onclick="generateRandomQuote()">New Quote</button>
+        <!-- Make button to hide quote area -->
+      </div>
+
+      <!-- Wrapper for list title input area -->
+      <div class="title-input-wrapper">
+        <input type="text" id="title-input" placeholder="Type list title here">
+        <button type="button" onclick="createNewList()">Create New List</button>
+      </div>
+
+      <!-- Wrapper for created lists -->
+      <div class="list-wrapper">
+        <ul id="lists">
+          <!-- This remains empty until user creates list(s) -->
+        </ul>
+      </div>
+
+    </div>
 
 
+    <!-- Look at how classy this footer is -->
+    <footer>
+      &copy; 2019 Ethan Miller
+    </footer>
 
 
-
-
-
-
-
-
-
-
-
-
+    <!-- Links to both JS functions' scripts -->
+    <script src="js/quote.js"></script>
+    <script src="js/new_list.js"></script>
 
 
   </body>
 
-</html
+</html>
