@@ -22,7 +22,7 @@ function createNewList (event) {
   else {
     newItem = document.createElement("li");
 
-    //Assigns an ID tag to the li upon its creation to apply CSS
+    //Assigns a class tag to the li upon its creation to apply CSS
     newItem.classList.add("created-list");
 
     //Sets title of list to user's text input

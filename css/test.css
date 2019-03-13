@@ -1,0 +1,41 @@
+body {
+    font-family: Helvetica, Arial, "Helvetica Neue", sans-serif;
+    background-color: lightgray;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#header-container {
+    background-color: gray;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.site-logo {
+  float: left;
+}
+
+.search-wrapper {
+  display: inline;
+}
+
+.account-wrapper {
+  float: right;
+}
+
+.quote-wrapper {
+  display: inline;
+}
+
+/* ----- Clearfix ----- */
+
+/* .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+} */

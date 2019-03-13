@@ -1,48 +1,20 @@
-/* #lists {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-size: 36px;
-    color: #fff;
-} */
-
-body {
-    font-family: Helvetica, Arial, "Helvetica Neue", sans-serif;
-    background-color: lightgray;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
+.quote-wrapper {
+  text-align: center;
 }
 
-#header-container {
-    background-color: gray;
-    height: 250px;
-    width: 100%;
-    line-height:50px;
-    text-align: center;
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+.title-input-wrapper {
+  display: inline;
+  text-align: center;
+  margin: 30px;
 }
 
-/* .site-logo {
-  float: left;
+/* do I need flexbox rules for ul or its child li's? */
+
+.created-list {
+  text-align: center;
 }
 
-.search-wrapper {
-  margin = auto;
+.quoteButton,
+.listButton {
+  display: block;
 }
-
-.account-wrapper {
-  float: right;
-} */
-
-
-/* ----- Clearfix ----- */
-
-/* .clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-} */
