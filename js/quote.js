@@ -32,11 +32,8 @@ function generateRandomQuote () {
 
 // Things to do:
 //
-//- fill quoteArray with actual content
+// - fill quoteArray with actual content
 
 //I am planning to add functionality in the future so that the
 //initial "Quote 0" is also selected from the array at random,
 //but for now, it is the same every time on page load
-//make some js to hide the quote with a button click maybe?
-
-//Will this function even be used for the main page?? Hmmmmmmm.......

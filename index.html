@@ -10,7 +10,7 @@ Things to do:
 - create image for top-left logo
 - clean out these comments from top, replace with relevant project-turning-in comments
 - change mouse to pointer/text on hover over various page elements
-- hide.js
+- functoinality for hide.js
 - add readme.md file to repo
 
 
@@ -68,11 +68,13 @@ Future page functionality:
     <div class="content-container">
 
       <!-- Wrapper for random quote generation-->
-      <div class="quote-wrapper">
+      <div class="quote-wrapper" id="quoteArea">
         <p id="quote">Quote 0</p>
         <button class="quoteButton" id="newQuoteButton" onclick="generateRandomQuote()">New Quote</button>
-        <button class="quoteButton" id="hideQuote=" onclick="<!-- function from hide.js -->">This will be an icon later</button>
       </div>
+
+      <!-- Shows/hides quote area -->
+      <button class="quoteButton" id="hideQuote" onclick="hideQuote()">Hide/Show (will be an icon later)</button>
 
       <!-- Wrapper for list title input area -->
       <div class="title-input-wrapper">
@@ -101,6 +103,7 @@ Future page functionality:
     <!-- Links to both JS functions' scripts -->
     <script src="js/quote.js"></script>
     <script src="js/new_list.js"></script>
+    <script src="js/hide.js"></script>
 
 
   </body>
