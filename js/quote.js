@@ -18,6 +18,16 @@ var quoteArray = [
   "Quote 8",
   "Quote 9",
   "Quote 10",
+  "Quote 11",
+  "Quote 12",
+  "Quote 13",
+  "Quote 14",
+  "Quote 15",
+  "Quote 16",
+  "Quote 17",
+  "Quote 18",
+  "Quote 19",
+  "Quote 20"
 ];
 
 //Selects a random item from quoteArray and displays it

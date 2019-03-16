@@ -2,25 +2,17 @@
 <!-- LAPTOP GIT PATH  cd c/users/e/projects/programming/code_louisville/media_tracker -->
 <!-- DESKTOP GIT PATH cd /d/projects/programming/code_louisville/media_tracker -->
 
+
 <!--
 
 Things to do:
 
 - make sure classes, ids, etc. are all good to go as css is built
+- hide/show quote button needs icon instead of text
 - create image for top-left logo
 - clean out these comments from top, replace with relevant project-turning-in comments
 - change mouse to pointer/text on hover over various page elements
-- functoinality for hide.js
 - add readme.md file to repo
-
-
-Future page functionality:
-
-- upon click, remove placeholder text from search bar and list title text input
-- ensure that lists remain on page after reload
-- search bar & advanced search
-- account system
-- all kinds of other fun goodies
 
 -->
 
@@ -74,14 +66,14 @@ Future page functionality:
       </div>
 
       <!-- Shows/hides quote area -->
-      <button class="quoteButton" id="hideQuote" onclick="hideQuote()">Hide/Show (will be an icon later)</button>
+      <button class="quoteButton" id="hideQuote" onclick="hideQuote()">Hide/Show</button>
 
       <!-- Wrapper for list title input area -->
       <div class="title-input-wrapper">
-      <form onsubmit="createNewList(event)">
-        <input type="text" id="title-input" placeholder="Type list title here">
-        <button class="listButton" type="submit">Create New List</button>
-      </form>
+        <form onsubmit="createNewList(event)">
+          <input type="text" id="title-input" placeholder="Type list title here">
+          <button class="listButton" type="submit">Create New List</button>
+        </form>
       </div>
 
       <!-- Wrapper for created lists -->
@@ -95,7 +87,7 @@ Future page functionality:
 
 
     <!-- Look at how classy this footer is -->
-    <footer class="clearfix">
+    <footer>
       &copy; 2019 Ethan Miller
     </footer>
 
@@ -109,3 +101,16 @@ Future page functionality:
   </body>
 
 </html>
+
+
+<!--
+
+Future functionality:
+
+- upon click, remove placeholder text from search bar and list title text input
+- ensure that lists remain on page after reload
+- search bar & advanced search
+- account system
+- all kinds of other fun goodies
+
+-->
