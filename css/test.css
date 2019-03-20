@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: Helvetica, Arial, "Helvetica Neue", sans-serif;
     background-color: lightgray;
     margin: auto;
@@ -30,7 +30,32 @@ body {
 
 .quote-wrapper {
   display: inline;
+} */
+
+/* Possible usable rules */
+
+/* .quote-wrapper {
+  margin: auto;
+  text-align: center;
+  max-width: 375px;
 }
+
+.title-input-wrapper {
+  display: inline;
+  text-align: center;
+  margin: 30px;
+} */
+
+/* do I need flexbox rules for ul or its child li's? */
+
+/* .created-list {
+  text-align: center;
+}
+
+.quoteButton,
+.listButton {
+  display: block;
+} */
 
 /* ----- Clearfix ----- */
 

@@ -8,11 +8,9 @@ var randomQuote;
 
 //Array full of quotes for the later function to choose from
 var quoteArray = [
-  '"I\'m sorry, Dave. I\'m afraid I can\'t do that."',
   '"Meet me in Montauk."',
   '"Fly, you fools!"',
   '"Whoever saves one life saves the world entire."',
-  '"I don\'t know, I\'m making this up as I go."',
   '"Roads? Where we\'re going, we don\'t need roads."',
   '"No, I am your father."',
   '"Does he look like a bitch?"',
@@ -53,3 +51,7 @@ function generateRandomQuote () {
 //I am planning to add functionality in the future so that the
 //initial "Quote 0" is also selected from the array at random,
 //but for now, it is the same every time on page load
+
+// Future stuff:
+//
+// - use "sorry dave" quote for an error page
