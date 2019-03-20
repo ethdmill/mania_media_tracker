@@ -21,7 +21,7 @@ var quoteArray = [
   '"That\'ll do, pig. That\'ll do."',
   '"I\'m disinclined to acquiesce to your request. Means "no"."',
   '"Well, Clarice, have the lambs stopped screaming?"',
-  '"60% of the time, it works every time."',
+  '"Sixty percent of the time, it works every time."',
   '"Mediocrities everywhere, I absolve you...I absolve you all."',
   '"Inconceivable!"',
   '"You know, some guys just can\'t hold their arsenic."',
@@ -32,6 +32,7 @@ var quoteArray = [
   '"Don\'t tell me what I can\'t do!"',
   '"You are the child of my makers; inheritor of all the left behind. You are Forerunner...but this ring is mine."',
   '"Stand in the ashes of a trillion dead souls and ask the ghosts if honor matters."',
+  '"\'Round the decay of that massive wreck, the lone and level sands stretch far away."'
 ];
 
 //Selects a random item from quoteArray and displays it

@@ -4,7 +4,7 @@
 let hide = document.getElementById("quoteArea");
 
 //Hides or shows quote area on click
-function hideQuote() {
+function hideShowQuote() {
 
   //Conditional statement checks to see if area is already hidden
   if (hide.style.display === "none") {

@@ -8,11 +8,20 @@
 Things to do:
 
 - make sure classes, ids, etc. are all good to go as css is built
-- hide/show quote button needs icon instead of text
-- create image for top-left logo
 - clean out these comments from top, replace with relevant project-turning-in comments
 - change mouse to pointer/text on hover over various page elements
 - add readme.md file to repo
+
+-->
+
+
+<!--
+
+For the quote area, how would I leave large stylized quotation marks
+on the page while still being able to change the inner text content?
+Would it be a span element inside of quotes that have their own class
+and are stylized separately in the CSS? Does quote.js need to affect
+a span item in between the two quotation marks?
 
 -->
 
@@ -32,24 +41,24 @@ Things to do:
     <header id="header-container">
 
       <!-- Main header link will eventually be a clickable logo image that returns to homepage -->
-      <a href="#" class="site-logo">Media Tracker Site</a>
+      <a href="#" class="site-logo" onclick="errorMessage()"><img src="img/logo2.png" alt="MANIA Media Tracker"></a>
 
       <!-- This div wraps the search bar, including the advanced search link and the search button -->
       <div class="search-wrapper">
 
         <!-- Advanced Search will eventually lead to separate advanced search page -->
-        <a href="#">Advanced Search</a>
+        <a href="#" onclick="errorMessage()">Advanced Search</a>
 
         <!-- Search bar and submit button -->
         <input type="text" placeholder="Here's searching for you, kid" name="search">
-        <button type="submit">Search</button>
+        <button type="submit" onclick="errorMessage()">Search</button>
       </div>
 
       <!-- This div wraps the account login/signup links -->
       <div class="account-wrapper">
-        <a href="#">Log In</a>
+        <a href="#" onclick="errorMessage()">Log In</a>
         <span> | </span>
-        <a href="#">Sign Up</a>
+        <a href="#" onclick="errorMessage()">Sign Up</a>
       </div>
       <!-- Upon login, these will be replaced with link to personal account page -->
 
@@ -66,7 +75,7 @@ Things to do:
       </div>
 
       <!-- Shows/hides quote area -->
-      <button class="quoteButton" id="hideQuote" onclick="hideQuote()">Hide/Show</button>
+      <button class="hideShowQuote" onclick="hideShowQuote()">test</button>
 
       <!-- Wrapper for list title input area -->
       <div class="title-input-wrapper">
@@ -96,6 +105,7 @@ Things to do:
     <script src="js/quote.js"></script>
     <script src="js/new_list.js"></script>
     <script src="js/hide.js"></script>
+    <script src="js/error.js"></script>
 
 
   </body>
@@ -110,7 +120,7 @@ Future functionality:
 - upon click, remove placeholder text from search bar and list title text input
 - ensure that lists remain on page after reload
 - search bar & advanced search
-- account system
+- account system - log in / sign up
 - all kinds of other fun goodies
 
 -->
