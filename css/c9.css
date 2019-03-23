@@ -1,7 +1,7 @@
 /* FROM c9.io */
 
 body {
-    font-family: Helvetica, Arial, "Helvetica Neue", Calibri, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     background: linear-gradient(rgba(245,245,245,.87), rgba(245,245,245,.87)),
                 url(../img/special_background.jpg) no-repeat center center fixed;
     background-size: cover;

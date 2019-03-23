@@ -6,15 +6,7 @@
     flex-wrap: wrap;
 }
 
-#header-container {
-    background-color: gray;
-    height: 100px;
-    width: 100%;
-    text-align: center;
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
+
 
 .site-logo {
   float: left;
@@ -50,12 +42,20 @@
 
 /* .created-list {
   text-align: center;
-}
+} */
 
-.quoteButton,
+/* .hideShowQuote {
+  background-color: #fff;
+  border: none;
+  background: url("../img/point_up.svg");
+  background-repeat: no-repeat;
+} */
+
+/* .quoteButton,
 .listButton {
   display: block;
 } */
+
 
 /* ----- Clearfix ----- */
 
