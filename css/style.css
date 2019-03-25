@@ -23,18 +23,9 @@ body {
   align-items: center;
   padding-left: 50px;
   padding-right: 50px;
-  padding-top: 20px;
+  padding-top: 25px;
   padding-bottom: 30px;
 }
-
-/* Are these floats necessary? */
-/* #search-icon {
-  float: left;
-}
-
-#user-icon {
-  float: right;
-} */
 
 #search-icon,
 #user-icon {

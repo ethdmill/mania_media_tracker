@@ -8,6 +8,7 @@ var randomQuote;
 
 // Array full of quotes for the later function to choose from
 var quoteArray = [
+  '"I don\'t know, I\'m making this up as I go."<br><br>-- Indiana Jones &nbsp;// &nbsp;Raiders of the Lost Ark (1981)',
   '"Meet me in Montauk."<br><br>-- Clementine Kruczynski &nbsp;// &nbsp;Eternal Sunshine of the Spotless Mind (2004)',
   '"Fly, you fools!"<br><br>-- Gandalf the Grey &nbsp;// &nbsp;The Fellowship of the Ring (2001)',
   '"Whoever saves one life saves the world entire."<br><br>-- Itzhak Stern &nbsp;// &nbsp;Schindler\'s List (1993)',
@@ -54,10 +55,5 @@ function generateRandomQuote () {
   quote.innerHTML = randomQuote;
 }
 
-//I am planning to add functionality in the future so that the
-//initial "Quote 0" is also selected from the array at random,
-//but for now, it is the same every time on page load
-
-// Future stuff:
-//
-// - use "sorry dave" quote for an error page
+// Uses jQuery to display a random quote from the array on initial page load
+$(document).ready(generateRandomQuote);
