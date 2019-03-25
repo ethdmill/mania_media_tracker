@@ -3,37 +3,14 @@
 <!-- DESKTOP GIT PATH cd /d/projects/programming/code_louisville/media_tracker -->
 
 
-<!--
-
-Things to do:
-
-- make sure classes, ids, etc. are all good to go as css is built
-- clean out these comments from top, replace with relevant project-turning-in comments
-- change mouse to pointer/text on hover over various page elements
-- add readme.md file to repo
-
--->
-
-
-<!--
-
-For the quote area, how would I leave large stylized quotation marks
-on the page while still being able to change the inner text content?
-Would it be a span element inside of quotes that have their own class
-and are stylized separately in the CSS? Does quote.js need to affect
-a span item in between the two quotation marks?
-
--->
-
-
 <!DOCTYPE html>
 <html>
   <head>
     <title>Media Tracker Site</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.3.1.js"></script>
   </head>
-
 
 
   <body>
@@ -53,17 +30,24 @@ a span item in between the two quotation marks?
     </header>
 
 
+    <!-- This is just a solid line for stylistic separation -->
+    <hr id="header-line">
+
+
     <!-- Container for all non-header content -->
     <div class="content-container">
 
       <!-- Wrapper for random quote generation-->
       <div class="quote-wrapper" id="quoteArea">
-        <p id="quote">"I don't know, I'm making this up as I go."</p>
+        <p id="quote">"I don't know, I'm making this up as I go."<br><br>-- Indiana Jones &nbsp;// &nbsp;Raiders of the Lost Ark (1981)</p>
         <button class="quoteButton" id="newQuoteButton" onclick="generateRandomQuote()">New Quote</button>
       </div>
 
       <!-- Shows/hides quote area -->
-      <button class="hideShowQuote" onclick="hideShowQuote()">test</button>
+      <button class="hideShowQuote" onclick="hideShowQuote()">Hide/Show Quote</button>
+
+      <!-- Another separation line -->
+      <hr id="body-line">
 
       <!-- Wrapper for list title input area -->
       <div class="title-input-wrapper">
@@ -91,8 +75,8 @@ a span item in between the two quotation marks?
 
     <!-- Links to both JS functions' scripts -->
     <script src="js/quote.js"></script>
-    <script src="js/new_list.js"></script>
     <script src="js/hide.js"></script>
+    <script src="js/new_list.js"></script>
     <script src="js/error.js"></script>
 
 

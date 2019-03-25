@@ -1,25 +1,20 @@
-//This javascript hides/shows the quote div
+// This javascript hides/shows the quote div
 
 // Selects quote area div
 let hide = document.getElementById("quoteArea");
 
-//Hides or shows quote area on click
+// Hides or shows quote area on click
 function hideShowQuote() {
 
-  //Conditional statement checks to see if area is already hidden
+  // Conditional statement checks to see if area is already hidden
   if (hide.style.display === "none") {
 
-    //If so, it is set to shown
-    hide.style.display = "block";
+    // If so, jQuery reveals it with a slideDown function
+    $('#quoteArea').slideDown(450);
   }
 
-  //Otherwise, it is hidden
+  // Otherwise, jQuery hides it with a slideUp function
   else {
-    hide.style.display = "none";
+  $('#quoteArea').slideUp(450);
   }
 }
-
-// Things to do:
-//
-// - need jquery for smooth animations
-//   (will need to link jquery to whole thing)

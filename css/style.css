@@ -1,32 +1,113 @@
+html,
+body {
+  height: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-image: linear-gradient(black 20vh, #C0C0C0);
+}
+
 .content-container {
   padding-left: 30px;
   padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #header-container {
   display: flex;
-  background-color: #C0C0C0;
-  height: 200px;
   justify-content: space-around;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
-#search-icon {
+/* Are these floats necessary? */
+/* #search-icon {
   float: left;
 }
 
 #user-icon {
   float: right;
-}
+} */
 
-#search-icon {
-  height: 130px;
-  width: 130px;
-}
-
+#search-icon,
 #user-icon {
   height: 130px;
   width: 130px;
 }
+
+p {
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #D2D2D2;
+}
+
+.hideShowQuote {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.quote-wrapper {
+  margin: auto;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#body-line {
+  width: 100%;
+}
+
+.title-input-wrapper {
+  display: inline;
+  text-align: center;
+  margin: 30px;
+}
+
+/* Possible UL styling? */
+/* .lists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+} */
+/* check notepad doc in project folder */
+
+.created-list {
+    border: 4px solid black;
+    margin: 10px 50px 50px;
+    padding: 75px 60px;
+    border-radius: 15px;
+    background-color: #750000;
+    box-shadow: inset 0 0 30px 3px rgba(0, 0, 0, 1);
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+  }
+
+footer {
+  position: fixed;
+  left: 5px;
+  bottom: 5px;
+}
+
+
+/* ----- Clearfix ----- */
+
+/* .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
+
+
+/* ----- Media Queries ----- */
