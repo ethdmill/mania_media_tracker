@@ -30,7 +30,7 @@ var quoteArray = [
   '"Hasta la vista, baby."<br><br>-- T-800 &nbsp;// &nbsp;Terminator 2: Judgment Day',
   '"Now, when I say \'Who\'s the master\', you say...\'Sho Nuff\'. Who\'s the master?"<br><br>-- Sho Nuff &nbsp;// &nbsp;The Last Dragon (1985)',
   '"I must break you."<br><br>-- Ivan Drago &nbsp;// &nbsp;Rocky IV (1985)',
-  '"P, A, R, T. Why? Becuase I gotta!"<br><br>-- Stanley Ipkiss &nbsp;// &nbsp;The Mask (1994)',
+  '"P, A, R, T. Why? Because I gotta!"<br><br>-- Stanley Ipkiss &nbsp;// &nbsp;The Mask (1994)',
   '"I\'m funny how, I mean, funny, like a I\'m a clown? I amuse you?"<br><br>-- Tommy DeVito &nbsp;// &nbsp;Goodfellas (1990)',
   '"In the beginning, the Universe was created. This has made a lot of people very angry and been widely regarded as a bad move."<br><br>-- Douglas Adams &nbsp;// &nbsp;The Hitchhiker\'s Guide to the Galaxy',
   '"I\'m not going there to die. I\'m going to find out if I\'m really alive."<br><br>-- Spike Spiegel &nbsp;// &nbsp;Cowboy Bebop',
