@@ -8,6 +8,8 @@ var randomQuote;
 
 // Array full of quotes for the later function to choose from
 var quoteArray = [
+
+  // MOVIES
   '"I don\'t know, I\'m making this up as I go."<br><br>-- Indiana Jones &nbsp;// &nbsp;Raiders of the Lost Ark (1981)',
   '"Meet me in Montauk."<br><br>-- Clementine Kruczynski &nbsp;// &nbsp;Eternal Sunshine of the Spotless Mind (2004)',
   '"Fly, you fools!"<br><br>-- Gandalf the Grey &nbsp;// &nbsp;The Fellowship of the Ring (2001)',
@@ -33,16 +35,25 @@ var quoteArray = [
   '"I must break you."<br><br>-- Ivan Drago &nbsp;// &nbsp;Rocky IV (1985)',
   '"P, A, R, T. Why? Because I gotta!"<br><br>-- Stanley Ipkiss &nbsp;// &nbsp;The Mask (1994)',
   '"I\'m funny how, I mean, funny, like a I\'m a clown? I amuse you?"<br><br>-- Tommy DeVito &nbsp;// &nbsp;Goodfellas (1990)',
+
+  // BOOKS
   '"In the beginning, the Universe was created. This has made a lot of people very angry and been widely regarded as a bad move."<br><br>-- Douglas Adams &nbsp;// &nbsp;The Hitchhiker\'s Guide to the Galaxy',
+
+  // SHOWS
   '"I\'m not going there to die. I\'m going to find out if I\'m really alive."<br><br>-- Spike Spiegel &nbsp;// &nbsp;Cowboy Bebop',
   '"There\'s always money in the banana stand."<br><br>-- George Bluth, Sr. &nbsp;// &nbsp;Arrested Development',
   '"I\'m not in the meth business. I\'m in the empire business."<br><br>-- Walter White &nbsp;// &nbsp;Breaking Bad',
   '"In the darkest times, hope is something you give yourself. That is the meaning of inner strength."<br><br>-- Uncle Iroh &nbsp;// &nbsp;Avatar: The Last Airbender',
   '"Don\'t tell me what I can\'t do!"<br><br>-- John Locke &nbsp;// &nbsp;Lost',
+
+  // GAMES
   '"You are the child of my makers; inheritor of all they left behind. You are Forerunner...but this ring is mine."<br><br>-- 343 Guilty Spark &nbsp;// &nbsp;Halo 3',
   '"Stand in the ashes of a trillion dead souls and ask the ghosts if honor matters."<br><br>-- Javik &nbsp;// &nbsp;Mass Effect 2',
+
+  // POEMS
   '"\'Round the decay of that massive wreck, the lone and level sands stretch far away."<br><br>-- Percy Bysshe Shelley &nbsp;// &nbsp;Ozymandias',
   '"Quis custodiet ipsos custodes?"<br><br>-- Juvenal &nbsp;// &nbsp;Satire VI, Lines 347-8'
+  
 ];
 
 // Selects a random item from quoteArray and displays it

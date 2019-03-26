@@ -5,7 +5,7 @@
 // and as such, more functionality will be added
 
 // For now, only some parts of the page have javascript functions
-// in order to fulfill the requirements
+// in order to fulfill the project requirements at hand
 
 function errorMessage() {
   alert("I'm sorry, Dave, I'm afraid I can't do that.");

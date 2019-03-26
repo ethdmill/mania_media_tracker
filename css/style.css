@@ -1,20 +1,16 @@
+/* ----- Universal Rules ----- */
+
 html,
 body {
   height: 100%;
   font-family: Helvetica, Arial, sans-serif;
-}
-
-body {
+  background-color: #C0C0C0;
   background-image: linear-gradient(black 20vh, #C0C0C0);
+  background-repeat: no-repeat;
 }
 
-.content-container {
-  padding-left: 30px;
-  padding-right: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.main-wrapper {
+  min-height: calc(100vh - 28px);
 }
 
 #header-container {
@@ -31,6 +27,15 @@ body {
 #user-icon {
   height: 130px;
   width: 130px;
+}
+
+.content-container {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 p {
@@ -61,14 +66,12 @@ p {
   margin: 30px;
 }
 
-/* Possible UL styling? */
-/* .lists {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-} */
-/* check notepad doc in project folder */
+#lists {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
 .created-list {
     border: 4px solid black;
@@ -80,25 +83,14 @@ p {
     font-size: 36px;
     color: white;
     text-align: center;
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; */
-  }
-
-footer {
-  position: fixed;
-  left: 5px;
-  bottom: 5px;
+    max-width: 200px;
+    max-height: 150px;
+    min-width: 100px;
 }
 
-
-/* ----- Clearfix ----- */
-
-/* .clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-} */
+footer {
+  padding: 5px 5px;
+}
 
 
 /* ----- Media Queries ----- */

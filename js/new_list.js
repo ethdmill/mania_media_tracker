@@ -35,8 +35,3 @@ function createNewList (event) {
     input.value = "";
   }
 }
-
-// Future functionality:
-//
-//  - dropdown menu with default list title options
-//    (that will auto-connect to appropriate databases)

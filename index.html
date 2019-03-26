@@ -15,54 +15,60 @@
 
   <body>
 
+    <!-- Wraps entire body minus footer -->
+    <div class="main-wrapper">
 
-    <header class="clearfix" id="header-container">
+      <!-- Wraps entire page header -->
+      <header id="header-container">
 
-      <!-- This icon links to search page -->
-      <a href="#" onclick="errorMessage()"><img id="search-icon" src="img/search.png" alt="Search"></a>
+        <!-- This icon links to search page -->
+        <a href="#" onclick="errorMessage()"><img id="search-icon" src="img/search.png" alt="Search"></a>
 
-      <!-- Main logo image links page to home page -->
-      <a href="#" class="site-logo" onclick="errorMessage()"><img src="img/logo2.png" alt="MANIA Media Tracker"></a>
+        <!-- Main logo image links page to home page -->
+        <a href="#" class="site-logo" onclick="errorMessage()"><img src="img/logo2.png" alt="MANIA Media Tracker"></a>
 
-      <!-- This icon links to account page -->
-      <a href="#" onclick="errorMessage()"><img id="user-icon" src="img/user.png" alt="Account"></a>
+        <!-- This icon links to account page -->
+        <a href="#" onclick="errorMessage()"><img id="user-icon" src="img/user.png" alt="Account"></a>
 
-    </header>
-
-
-    <!-- This is just a solid line for stylistic separation -->
-    <hr id="header-line">
+      </header>
 
 
-    <!-- Container for all non-header content -->
-    <div class="content-container">
+      <!-- This is just a solid line for stylistic separation -->
+      <hr id="header-line">
 
-      <!-- Wrapper for random quote generation-->
-      <div class="quote-wrapper" id="quoteArea">
-        <p id="quote"><br><br><br></p>
-        <button class="quoteButton" id="newQuoteButton" onclick="generateRandomQuote()">New Quote</button>
+
+      <!-- Container for all non-header content -->
+      <div class="content-container">
+
+        <!-- Wrapper for random quote generation-->
+        <div class="quote-wrapper" id="quoteArea">
+          <p id="quote"><br><br><br></p>
+          <button class="quoteButton" id="newQuoteButton" onclick="generateRandomQuote()">New Quote</button>
+        </div>
+
+        <!-- Shows/hides quote area -->
+        <button class="hideShowQuote" onclick="hideShowQuote()">Hide/Show Quote</button>
+
+        <!-- Another separation line -->
+        <hr id="body-line">
+
+        <!-- Wrapper for list title input area -->
+        <div class="title-input-wrapper">
+          <form onsubmit="createNewList(event)">
+            <input type="text" id="title-input" placeholder="Type list title here">
+            <button class="listButton" type="submit">Create New List</button>
+          </form>
+        </div>
+
+        <!-- Wrapper for created lists -->
+        <div class="list-wrapper">
+          <ul id="lists">
+            <!-- This remains empty until user creates list(s) -->
+          </ul>
+        </div>
+
       </div>
 
-      <!-- Shows/hides quote area -->
-      <button class="hideShowQuote" onclick="hideShowQuote()">Hide/Show Quote</button>
-
-      <!-- Another separation line -->
-      <hr id="body-line">
-
-      <!-- Wrapper for list title input area -->
-      <div class="title-input-wrapper">
-        <form onsubmit="createNewList(event)">
-          <input type="text" id="title-input" placeholder="Type list title here">
-          <button class="listButton" type="submit">Create New List</button>
-        </form>
-      </div>
-
-      <!-- Wrapper for created lists -->
-      <div class="list-wrapper">
-        <ul id="lists">
-          <!-- This remains empty until user creates list(s) -->
-        </ul>
-      </div>
 
     </div>
 
@@ -73,9 +79,9 @@
     </footer>
 
 
-    <!-- Links to both JS functions' scripts -->
+    <!-- Links to JS files, not including jQuery -->
     <script src="js/quote.js"></script>
-    <script src="js/hide.js"></script>
+    <script src="js/hide_show.js"></script>
     <script src="js/new_list.js"></script>
     <script src="js/error.js"></script>
 
@@ -83,16 +89,3 @@
   </body>
 
 </html>
-
-
-<!--
-
-Future functionality:
-
-- upon click, remove placeholder text from search bar and list title text input
-- ensure that lists remain on page after reload
-- search bar & advanced search
-- account system - log in / sign up
-- all kinds of other fun goodies
-
--->
