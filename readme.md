@@ -1,7 +1,11 @@
 ---------------------------
 
 Ethan Miller
+
+Code Louisville
+
 Front-End Web Development
+
 January 2019 (Wednesday)
 
 ---------------------------
