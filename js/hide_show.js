@@ -15,6 +15,6 @@ function hideShowQuote() {
 
   // Otherwise, jQuery hides it with a slideUp function
   else {
-  $('#quoteArea').slideUp(450);
+    $('#quoteArea').slideUp(450);
   }
 }

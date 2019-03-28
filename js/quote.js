@@ -33,7 +33,7 @@ var quoteArray = [
   '"Hasta la vista, baby."<br><br>-- T-800 &nbsp;// &nbsp;Terminator 2: Judgment Day',
   '"Now, when I say \'Who\'s the master\', you say...\'Sho Nuff\'. Who\'s the master?"<br><br>-- Sho Nuff &nbsp;// &nbsp;The Last Dragon (1985)',
   '"I must break you."<br><br>-- Ivan Drago &nbsp;// &nbsp;Rocky IV (1985)',
-  '"P, A, R, T. Why? Because I gotta!"<br><br>-- Stanley Ipkiss &nbsp;// &nbsp;The Mask (1994)',
+  '"P, A, R, T. Y? Because I gotta!"<br><br>-- Stanley Ipkiss &nbsp;// &nbsp;The Mask (1994)',
   '"I\'m funny how, I mean, funny, like a I\'m a clown? I amuse you?"<br><br>-- Tommy DeVito &nbsp;// &nbsp;Goodfellas (1990)',
 
   // BOOKS
@@ -53,7 +53,7 @@ var quoteArray = [
   // POEMS
   '"\'Round the decay of that massive wreck, the lone and level sands stretch far away."<br><br>-- Percy Bysshe Shelley &nbsp;// &nbsp;Ozymandias',
   '"Quis custodiet ipsos custodes?"<br><br>-- Juvenal &nbsp;// &nbsp;Satire VI, Lines 347-8'
-  
+
 ];
 
 // Selects a random item from quoteArray and displays it

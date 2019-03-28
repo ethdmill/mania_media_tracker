@@ -7,6 +7,7 @@
 <html>
   <head>
     <title>Media Tracker Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.3.1.js"></script>
@@ -18,19 +19,39 @@
     <!-- Wraps entire body minus footer -->
     <div class="main-wrapper">
 
-      <!-- Wraps entire page header -->
-      <header id="header-container">
+      <!-- Wraps entire page header (tagged for desktop - not displayed on mobile) -->
+      <header id="header-container-desktop">
 
-        <!-- This icon links to search page -->
-        <a href="#" onclick="errorMessage()"><img id="search-icon" src="img/search.png" alt="Search"></a>
+        <!-- This icon links to search page (tagged for desktop) -->
+        <a href="#" onclick="errorMessage()"><img class="header-icon-desktop" id="search-icon-desktop" src="img/search_desktop.png" alt="Search"></a>
 
-        <!-- Main logo image links page to home page -->
-        <a href="#" class="site-logo" onclick="errorMessage()"><img src="img/logo2.png" alt="MANIA Media Tracker"></a>
+        <!-- Main logo image links page to home page (tagged for desktop) -->
+        <a href="#" onclick="errorMessage()"><img id="site-logo-desktop" src="img/site_logo.png" alt="MANIA Media Tracker"></a>
 
-        <!-- This icon links to account page -->
-        <a href="#" onclick="errorMessage()"><img id="user-icon" src="img/user.png" alt="Account"></a>
+        <!-- This icon links to account page (tagged for desktop) -->
+        <a href="#" onclick="errorMessage()"><img class="header-icon-desktop" id="user-icon-desktop" src="img/user_desktop.png" alt="Account"></a>
 
       </header>
+
+
+      <!-- Wraps entire page header (tagged for mobile - not displayed on desktop) -->
+      <div id="header-container-mobile">
+
+        <!-- Main logo image links page to home page (tagged for mobile) -->
+        <a href="#" onclick="errorMessage()"><img id="site-logo-mobile" src="img/site_logo.png" alt="MANIA Media Tracker"></a>
+
+        <!-- Wraps non-logo icons to be displayed on mobile -->
+        <div class="icon-wrapper-mobile">
+
+          <!-- This icon links to search page (tagged for mobile) -->
+          <a href="#" onclick="errorMessage()"><img id="search-icon-mobile" src="img/search_mobile.png" alt="Search"></a>
+
+          <!-- This icon links to account page (tagged for mobile) -->
+          <a href="#" onclick="errorMessage()"><img id="user-icon-mobile" src="img/user_mobile.png" alt="Account"></a>
+
+        </div>
+
+      </div>
 
 
       <!-- This is just a solid line for stylistic separation -->
@@ -53,7 +74,7 @@
         <hr id="body-line">
 
         <!-- Wrapper for list title input area -->
-        <div class="title-input-wrapper">
+        <div align="center" class="title-input-wrapper">
           <form onsubmit="createNewList(event)">
             <input type="text" id="title-input" placeholder="Type list title here">
             <button class="listButton" type="submit">Create New List</button>
