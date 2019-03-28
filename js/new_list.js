@@ -1,11 +1,13 @@
 // This javascript manages the "Create New List" button
 
+
 // These select elements in the HTML for later use
 var ul = document.getElementById("lists");
 var input = document.getElementById("title-input");
 
 // This is the basis for each new li element
 var newItem;
+
 
 // Creates a new li element
 function createNewList (event) {
@@ -20,6 +22,7 @@ function createNewList (event) {
 
   // Alternate condition allows for list creation given any non-blank input string
   else {
+
     newItem = document.createElement("li");
 
     // Assigns a class tag to the li upon its creation to apply CSS
@@ -33,5 +36,7 @@ function createNewList (event) {
 
     // Resets text input field for cleaner usage
     input.value = "";
+    
   }
+
 }

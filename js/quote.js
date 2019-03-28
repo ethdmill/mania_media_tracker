@@ -1,5 +1,6 @@
 // This javascript displays a random quote on button click
 
+
 // Selects content of initial quote on page
 var quote = document.getElementById('quote');
 
@@ -56,6 +57,7 @@ var quoteArray = [
 
 ];
 
+
 // Selects a random item from quoteArray and displays it
 function generateRandomQuote () {
 
@@ -64,7 +66,9 @@ function generateRandomQuote () {
 
   // Sets HTML of displayed quote to random new quote
   quote.innerHTML = randomQuote;
+  
 }
+
 
 // Uses jQuery to display a random quote from the array on initial page load
 $(document).ready(generateRandomQuote);

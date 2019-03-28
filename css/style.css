@@ -1,5 +1,6 @@
 /* ----- General Rules ----- */
 
+/* Mostly deals with background and general font selections */
 html,
 body {
   height: 100%;
@@ -9,14 +10,22 @@ body {
   background-repeat: no-repeat;
 }
 
+/* Helps ensure that footer stays at bottom of page, not window */
 .main-wrapper {
   min-height: calc(100vh - 28px);
 }
 
+/* Next few rules deal with the search/user icons wrapping
+around/under the logo image on desktop/mobile */
+
+/* Because this was built mobile-first, the desktop
+search/user icons won't display on either side
+of the logo banner image */
 #header-container-desktop {
   display: none;
 }
 
+  /* Search/user icons will, instead, look like this */
 #site-logo-mobile {
   display: block;
   margin-left: auto;
@@ -35,11 +44,15 @@ body {
   padding-bottom: 30px;
 }
 
+/* Fixed image sizes help to orient them on the page */
 #search-icon-mobile,
 #user-icon-mobile {
   width: 76px;
   height: 76px;
 }
+
+/* Remaining general rules (except footer)
+affect the quote area and the list area */
 
 .content-container {
   padding-left: 30px;
@@ -50,6 +63,8 @@ body {
   justify-content: center;
 }
 
+/* This is the paragraph element that holds
+the text for the currently displayed quote */
 p {
   margin: 0;
   font-size: 2em;
@@ -58,6 +73,7 @@ p {
   color: #D2D2D2;
 }
 
+/* Various button rules make them look nicer */
 button {
   font-size: 1.3em;
   padding: 15px 35px;
@@ -78,6 +94,8 @@ button:hover {
   padding-bottom: 10px;
 }
 
+/* This ensures that the second horizontal line shrinks
+responsively with the page; the first line is fine */
 #body-line {
   width: 100%;
 }
@@ -86,7 +104,9 @@ button:hover {
   margin: 10px 0;
 }
 
+/* Affects the form field for list title input */
 #title-input {
+  font-size: 1.3em;
   justify-content: center;
   margin-bottom: 10px;
   padding: 15px 45px;
@@ -106,6 +126,8 @@ input {
   margin-top: 30px;
 }
 
+/* Uses flexbox to properly align created lists and
+give them the ability to wrap repsonsively */
 #lists {
   display: flex;
   flex-wrap: wrap;
@@ -113,6 +135,7 @@ input {
   justify-content: space-around;
 }
 
+/* This is what each list button will look like upon creation */
 .created-list {
     border: 4px solid black;
     margin: 10px 10px 10px;
@@ -128,6 +151,7 @@ input {
     min-width: 100px;
 }
 
+/* Fancy lil' footer rule */
 footer {
   padding: 5px 5px;
 }
@@ -141,6 +165,8 @@ footer {
     background-image: linear-gradient(black 238px, #C0C0C0);
   }
 
+  /* This is what the search/user icons will look like on desktop;
+  wraps them back around to either side of the logo banner image */
   #header-container-desktop {
     display: flex;
     justify-content: space-around;
@@ -151,9 +177,14 @@ footer {
     padding-bottom: 30px;
   }
 
+  /* The search/user icons that exist under the logo on
+  mobile are canceled out by this media query rule */
   #header-container-mobile {
     display: none;
   }
+
+  /* Remaining media query rules resize various elements and
+  facilitate readability on screen sizes larger than mobile */
 
   p {
     font-size: 1.2em;
@@ -171,6 +202,7 @@ footer {
   }
 
   #title-input {
+    font-size: 1em;
     margin-right: 10px;
     padding: 3px;
   }
